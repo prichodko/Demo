@@ -26,6 +26,9 @@
 		1E656F3A1C11F947007B42F4 /* Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Demo; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E656F3D1C11F947007B42F4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		1E656F441C11FB96007B42F4 /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
+		1E8FC2701C1208AF00653743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E8FC2711C1208D600653743 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1E8FC2751C12098500653743 /* data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = data.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +63,19 @@
 			children = (
 				1E656F3D1C11F947007B42F4 /* main.c */,
 				1E656F441C11FB96007B42F4 /* file.txt */,
+				1E8FC2741C12098500653743 /* data.xcdatamodeld */,
+				1E8FC26F1C12089300653743 /* Resources */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		1E8FC26F1C12089300653743 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E8FC2701C1208AF00653743 /* Info.plist */,
+				1E8FC2711C1208D600653743 /* Images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +85,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E656F411C11F947007B42F4 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				1E8FC2791C1211B200653743 /* ShellScript */,
 				1E656F361C11F947007B42F4 /* Sources */,
 				1E656F371C11F947007B42F4 /* Frameworks */,
 				1E656F381C11F947007B42F4 /* CopyFiles */,
@@ -114,6 +129,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E8FC2791C1211B200653743 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E656F361C11F947007B42F4 /* Sources */ = {
@@ -207,14 +238,32 @@
 		1E656F421C11F947007B42F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = "/Users/Felicio/Documents/Developer/Playground/OS X/Demo/Demo/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		1E656F431C11F947007B42F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = "/Users/Felicio/Documents/Developer/Playground/OS X/Demo/Demo/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -237,8 +286,22 @@
 				1E656F431C11F947007B42F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E8FC2741C12098500653743 /* data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E8FC2751C12098500653743 /* data.xcdatamodel */,
+			);
+			currentVersion = 1E8FC2751C12098500653743 /* data.xcdatamodel */;
+			path = data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1E656F321C11F947007B42F4 /* Project object */;
 }

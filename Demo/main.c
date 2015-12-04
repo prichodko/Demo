@@ -10,8 +10,8 @@
 
 int main(int argc, const char * argv[]) {
     char * string;
+    int n = 1;
     
-    getline(&string, 0, stdin);
     printf("%s\n", string);
     
     return 0;

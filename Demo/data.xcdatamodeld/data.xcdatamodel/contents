@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Share" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stock" inverseName="newRelationship" inverseEntity="Stock" syncable="YES"/>
+    </entity>
+    <entity name="Stock" syncable="YES">
+        <attribute name="maxID" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Share" inverseName="newRelationship" inverseEntity="Share" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Share" positionX="-3015" positionY="-891" width="128" height="103"/>
+        <element name="Stock" positionX="-3177" positionY="-979" width="128" height="88"/>
+    </elements>
+</model>
